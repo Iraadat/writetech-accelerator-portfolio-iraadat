@@ -1,39 +1,41 @@
-# WriteTech Accelerator Portfolio — Iraadat
+# Website
 
-Welcome. This repository collects my WriteTech Accelerator submissions, audits, and useful links.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Featured Work
+## Installation
 
-### 1) Documentation Repo Audit
-- **Fork (repo I audited):** https://github.com/Iraadat/docaudit-writetech  
-- **Audit file (branch):** https://github.com/Iraadat/docaudit-writetech/blob/audit/Iraadat/audit.md  
-- **Pull Request:** <PASTE_YOUR_AUDIT_PR_LINK_HERE>
+```bash
+yarn
+```
 
-**Summary:**  
-A short audit of the repository structure covering folder layout, how documentation and pages are organised, and actionable improvements for clarity and scalability (consolidation, sidebar grouping, naming conventions, and quality checks).
+## Local Development
 
----
+```bash
+yarn start
+```
 
-## Other Notes
-- This portfolio is a living document and will be updated as I complete more WriteTech exercises and apply feedback.
-- Repository is public for easy review.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
----
+## Build
 
-## About Me
+```bash
+yarn build
+```
 
-Hello. My name is **Iraadat**. I am a technical writing student and a graduate of the **ALX Foundations** course and the **Aspire Leaders Program**. I focus on producing clear, scalable documentation and practical audits. I have hands-on experience in documentation workflows and working with Microsoft 365 support tasks and technical troubleshooting. I use Git and GitHub daily and follow the fork → branch → pull request workflow for collaborative work.
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
----
+## Deployment
 
-## Contact & Links
+Using SSH:
 
-- GitHub profile: https://github.com/Iraadat  
-- Audit repo (fork): https://github.com/Iraadat/docaudit-writetech
+```bash
+USE_SSH=true yarn deploy
+```
 
----
+Not using SSH:
 
-## How to view my audit quickly
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
 
-1. Follow the **Audit file** link above to see `audit.md` on the `audit/Iraadat` branch.  
-2. If you prefer the Pull Request view, paste the **Pull Request** link (above) into your browser.
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
